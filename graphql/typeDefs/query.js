@@ -4,7 +4,8 @@ const query = gql`
 	type Query {
 		collection(id: ID, title: String): Collection
 		collections: [Collection!]
-		user(id: ID!): User
+		user(id: ID!): User!
+		userProfile: User!
 		users: [User!]
 	}
 `;

@@ -6,6 +6,10 @@ const userResolvers = {
 	Query: {
 		user: async (_parent, { id }) => await User.findById(id),
 		users: async () => await User.find({}),
+		userProfile: (parent, args, { req: { isAuth, user } }, info) => {
+			if (!isAuth) throw new Error("Please authenticate and try again.");
+			return user;
+		},
 	},
 	Mutation: {
 		register: async (_parent, { name, email, password }) => {

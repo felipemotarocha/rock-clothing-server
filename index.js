@@ -12,10 +12,10 @@ app.use(auth);
 const server = new ApolloServer({
 	typeDefs,
 	resolvers,
-	context: async ({ req, res }) => ({ req, res }),
+	context: ({ req, res }) => ({ req, res }),
 });
 
-server.applyMiddleware({ app });
+server.applyMiddleware({ app, auth });
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Listening on port ${port}!`));
