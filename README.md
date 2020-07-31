@@ -6,7 +6,19 @@
 
 I built this application to practice my React and GraphQL skills. It's a pretty simple one so the data is static and can not be changed in the client side.
 
-## Quick Start 🚀
+![Home Page](https://imgur.com/PdRiQqz.png)
+
+![Collection Page](https://imgur.com/RADvw16.png)
+
+![Cart Drawer](https://imgur.com/8Rd9G7f.png)
+
+![Checkout Page](https://imgur.com/mcZKNO7.png)
+
+![Login Page](https://imgur.com/h0EFjoW.png)
+
+![Register Page](https://imgur.com/UAyVytM.png)
+
+# Quick Start 🚀
 
 ---
 
@@ -24,7 +36,7 @@ JWT_SECRET_KEY=<your_jwt_secret_key>
 STRIPE_SECRET_KEY=<your_stripe_secret_key>
 ```
 
-### Setting Up Your Stripe Secret Key 🔑
+## Setting Up Your Stripe Secret Key 🔑
 
 ---
 
@@ -37,19 +49,19 @@ After you create your account, yet in the Stripe website go to the `Dashboard` a
 ![Test API keys demo](https://imgur.com/OiHWW3J.png)
 Then you can see your own Stripe Secret Key.
 
-### Notes On The Database 📁
+## Notes On The Database 📁
 
 ---
 
 I provided the password of the `guest` user of the database, so you can only **read the data**. The database has all the necessary data that the application needs to work. Remember that is a simple e-commerce project so it does not have a functionality to edit the products. If you want to implement, you are free to do it.
 
-## Client Side Code 💻
+# Client Side Code 💻
 
 ---
 
 The client side code of this project is in [this repo](https://github.com/fmroocha/rock-clothing-client "Rock Clothing Client Side Repo").
 
-## Application Info 📝
+# Application Info 📝
 
 ---
 
