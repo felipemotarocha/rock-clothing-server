@@ -47,5 +47,12 @@ app.get("/product-payment", async ({ query: { amount } }, res) => {
 	res.status(200).send({ sessionId: session.id });
 });
 
+// Setting up SPA
+app.use(express.static(path.join(__dirname, "build")));
+
+app.get("*", function (req, res) {
+	res.sendFile(path.join(__dirname, "build", "index.html"));
+});
+
 const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Listening on port ${port}!`));
