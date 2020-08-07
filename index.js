@@ -37,10 +37,12 @@ app.get("/product-payment", async ({ query: { amount } }, res) => {
 			},
 		],
 		mode: "payment",
-		success_url: `http://localhost:3000/payment-successful?amount=${
+		success_url: `${process.env.CLIENT_URL}/payment-successful?amount=${
 			amount / 100
 		}`,
-		cancel_url: `http://localhost:3000/payment-failure?amount=${amount / 100}`,
+		cancel_url: `${process.env.CLIENT_URL}/payment-failure?amount=${
+			amount / 100
+		}`,
 	});
 	res.status(200).send({ sessionId: session.id });
 });

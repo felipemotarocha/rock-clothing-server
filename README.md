@@ -30,7 +30,10 @@ Create an `.env` file in the `root` directory with the following values:
 DB_PASSWORD=Yw6ZxosIq3gsvkhp
 JWT_SECRET_KEY=<your_jwt_secret_key>
 STRIPE_SECRET_KEY=<your_stripe_secret_key>
+CLIENT_URL=http://localhost:3000
 ```
+
+_You can change the `CLIENT_URL` value if your client URL is different or if you want to deploy the application._
 
 # Setting Up Your Stripe Secret Key 🔑
 
