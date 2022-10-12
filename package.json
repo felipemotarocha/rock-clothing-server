@@ -9,7 +9,7 @@
     "dev": "nodemon index.js"
   },
   "dependencies": {
-    "apollo-server": "^2.16.0",
+    "apollo-server": "^2.25.4",
     "apollo-server-express": "^2.16.0",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
